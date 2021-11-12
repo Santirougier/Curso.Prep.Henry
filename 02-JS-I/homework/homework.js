@@ -148,7 +148,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero > 0) return('es positivo');
   if (numero < 0) return ('es negativo'); 
-  if (numero == 0) return false;
+  if (numero === 0) return false;
 
 }
 
@@ -208,9 +208,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+  if (letra.length >1) return ('dato incorrecto');
+    if (letra === 'a'|| letra === 'e' || letra === 'i' ||letra ==='o'||letra ==='u') return ('es vocal'); else return ('dato incorrecto');
+
+    
   
-    if (letra.length >1) return ('dato incorrecto');
-    if (letra == 'a') return ('es vocal'); else return ('dato incorrecto');     
 }
 
 
