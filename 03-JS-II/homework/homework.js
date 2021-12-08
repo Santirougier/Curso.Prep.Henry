@@ -127,8 +127,8 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   if (numero=== 0 || numero === 1 ) return (false); 
   for( a= 2 ; a <= numero; a++); {
-  if ( numero % 2 === 0) return (false);
-   } return (true);
+  if ( numero % 2 === 0) return false ;
+  if (numero% 2===1) return true; }
    
 
 }
