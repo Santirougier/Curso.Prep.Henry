@@ -188,11 +188,11 @@ function mesesDelAño(array) {
   nuevoarray = [];
   for (var i = 0; i < array.length; i++) {
      if (array[i] === 'Enero'|| array[i] === 'Marzo'|| array[i] === 'Novimbre') 
-                                      nuevoarray.push(array[i]);
-                   if (array[i] !== 'Enero'|| array[i] !== 'Marzo'|| array[i] !== 'Novimbre') return "No se encontraron los meses pedidos" } 
+                                      nuevoarray.push(array[i]);}
+                  
                                                                         
     
- return nuevoarray; }
+ return nuevoarray;   if (array[i] !== 'Enero'|| array[i] !== 'Marzo'|| array[i] !== 'Novimbre') return "No se encontraron los meses pedidos" }
 
 
 function mayorACien(array) {
